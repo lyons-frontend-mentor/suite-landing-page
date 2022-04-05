@@ -118,7 +118,7 @@
   - br-15
   - Landscape
 - Stats
-  - mb-56
+  - mb-236
   - Stat
     - mb-32
 - Testimonial
@@ -186,7 +186,7 @@
     - br-15
     - Portrait
 - Stats
-  - mb-92
+  - mb-272
   - Stat
     - gap 10px
 - Testimonial
