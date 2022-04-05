@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Suite landing page</title>
@@ -17,11 +23,12 @@
   </header>
   <main>
     <div class="main-content">
-      <div class="intro-image">
+      <div class="intro-and-image">
         <section class="intro">
-          <h1 class="intro__header">
-            A <span class="--bold">super solution</span> for your <span class="--bold">business.</span>
-            <img class="intro__curve" src="assets/pattern-curved-line-1.svg" alt="">
+          <h1 class="intro__header h-xl">
+            A <span class="super-solution --bold">super solution</span>
+            <br/>
+            for your <span class="--bold">business.</span>
           </h1>
           <p class="intro__text">
             Our marketing and sales automations help you scale your outreach to 
@@ -38,28 +45,31 @@
       <section class="stats">
         <h2 class="hidden">Stats</h2>
         <p class="stat">
-          <span class="stat__value">
+          <span class="stat__value h-l">
             2K+
           </span>
-          <span class="stat__name">
+          <br/>
+          <span class="stat__name h-s">
             Companies
           </span>
         </p>
       
         <p class="stat">
-          <span class="stat__value">
+          <span class="stat__value h-l">
             8
           </span>
-          <span class="stat__name">
+          <br/>
+          <span class="stat__name h-s">
             Languages
           </span>
         </p>
       
         <p class="stat">
-          <span class="stat__value">
+          <span class="stat__value h-l">
             1.2M
           </span>
-          <span class="stat__name">
+          <br/>
+          <span class="stat__name h-s">
             Leads
           </span>
         </p>
@@ -67,28 +77,37 @@
     </div>
     <section class="testimonial">
       <h2 class="hidden">Testimonial</h2>
-      <div role="img" class="testimonial__img">
-
+      <div class="testimonial__img-wrapper">
+        <div role="img" class="testimonial__img">
+          
+        </div>
+        <img class="testimonial__blur" src="assets/pattern-blur.svg" alt="">
       </div>
       <img class="testimonial__curve" src="assets/pattern-curved-line-2.svg" alt="">
-      <p class="testimonial__header">
-        It just works.
+      <p class="testimonial__header h-l">
+        It just <span class="--bold">works.</span>
       </p>
       <figure class="testimonial__quote">
-        <blockquote class="testimonial__text">
+        <blockquote class="testimonial__text quote">
           “I really like how it is an all-in-one solution that handle many of 
           the tasks that you would normally need separate tools to do the same 
           job. This thing is a miracle worker.”
         </blockquote>
         <figcaption class="testimonial__attribution">
-          <cite class="testimonial__cite">
+          <cite class="testimonial__cite h-m">
             Jeremy Robinson
           </cite>
-          CMO, Fylo
+          <br/>
+          <span class="h-s">
+            CMO, Fylo
+          </span>
         </figcaption>
       </figure>
     </section>
   </main>
+  <div class="footer-bg">
+
+  </div>
   <footer class="footer">
     <img src="assets/logo.svg" alt="Suite logo">
     <p>

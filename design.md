@@ -54,9 +54,15 @@
 - Heading XL: Bold and regular, 72px - 78px, -1px char space
   - 38px - 44px, -0.53px on mobile
   - 56px - 64px, -0.78px on tablet
+  - Main `h1`
 - Heading L: Bold and regular, 48px - 56px, -0.5px char space
+  - Stat values
+  - Testimonial header
 - Heading M: Bold, 18px - 32px, -0.2px char space
+  - Attribution header
 - Heading S: Bold, 16px - 26px, -2.5px char space
+  - Stat names
+  - Attribution company
 - Quote: Regular, 20px - 35px
 - Body: Regular, 18px - 32px
   - 16px - 28px on mobile and tablet

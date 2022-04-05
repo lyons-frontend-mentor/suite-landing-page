@@ -1,0 +1,234 @@
+/* Custom properties and resets */
+/* #region */
+
+:root {
+  --blue-800: hsl(219, 43%, 16%);
+  --gray-500: hsl(218, 20%, 36%);
+  --cream: hsl(30, 33%, 93%);
+  --white: hsl(30, 29%, 97%);
+
+  --accent-lavender: hsl(264, 100%, 69%);
+  --accent-magenta: hsl(292, 76%, 54%);
+  --accent-orange: hsl(31, 100%, 65%);
+  --accent-gradient: linear-gradient(to left top, var(--accent-orange), var(--accent-magenta), var(--accent-lavender)); 
+}
+
+/* Remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default cite styling */
+cite {
+  font-style: unset;
+}
+
+/* Remove default button styling */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+/* For accessibility labels */
+.hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  font-size: 1px;
+}
+
+/* #endregion */
+
+
+/* Typography */
+/* #region */
+
+body {
+  margin-top: 24px;
+  margin-inline: 16px;
+
+  color: var(--gray-500);
+  font-family: 'Epilogue', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.h-xl {
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: -0.53px;
+
+  font-weight: 400;
+}
+.h-xl > .--bold {
+  font-weight: 700;
+}
+
+.h-l {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+
+  font-weight: 400;
+}
+.h-l > .--bold {
+  font-weight: 700;
+}
+
+.h-m {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.h-s {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.quote {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.footer {
+  font-size: 15px;
+  line-height: 32px;
+}
+
+/* #endregion */
+
+
+/* General styling */
+/* #region */
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__cta {
+  border-radius: 6px;
+  border: 1px solid var(--blue-800);
+
+  color: var(--blue-800);
+  font-weight: 700;
+}
+.header__cta:hover,
+.header__cta:focus {
+  background-color: var(--blue-800);
+
+  color: var(--white);
+}
+
+
+/* Intro */
+.intro__header {
+  position: relative;
+
+  color: var(--blue-800);
+}
+.super-solution {
+  position: relative;
+
+  display: inline-block;
+}
+.super-solution::before {
+  position: absolute;
+  
+  content: url('assets/pattern-curved-line-1.svg');
+}
+.intro__cta {
+  background-color: var(--blue-800);
+  border-radius: 6px;
+
+  color: var(--white);
+  font-weight: 700;
+}
+.intro__cta:hover,
+.intro__cta:focus {
+  background: var(--accent-gradient);
+
+  color: var(--white);
+}
+
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat__value {
+  color: var(--blue-800);
+  font-weight: 700;
+}
+
+
+/* Testimonial */
+.testimonial {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--blue-800);
+  border-radius: 15px;
+
+  color: var(--white);
+}
+.testimonial__img-wrapper {
+  position: relative;
+}
+.testimonial__img {
+  position: absolute;
+}
+.testimonial__blur {
+  position: absolute;
+}
+
+
+/* Footer */
+.footer-bg {
+  bottom: 0;
+
+  position: absolute;
+  width: 100%;
+
+  background-color: var(--cream);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+.footer__socials > img:hover,
+.footer__socials > img:focus {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* #endregion */
+
+
+/* Mobile styling */
+/* #region */
+
+
+
+/* #endregion */
