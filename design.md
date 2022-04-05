@@ -123,6 +123,7 @@
     - mb-32
 - Testimonial
   - mb-56
+  - px-16
   - Everything centered
   - Image
     - mb-40
@@ -181,9 +182,7 @@
   - Text
     - mb-40
   - Image
-    - mb-56
-    - 343 x 240
-    - br-15
+    - 281 x 482
     - Portrait
 - Stats
   - mb-272
@@ -192,9 +191,7 @@
 - Testimonial
   - mb-72
   - x-margin in-line
-  - Quote
-    - Text
-      - mx-58
+  - px-58
 - Footer
   - mb-72
   - Background

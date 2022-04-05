@@ -226,11 +226,10 @@ body {
 
 /* Footer */
 .footer-bg {
-  left: -16px;
   bottom: 0;
 
   position: absolute;
-  width: calc(100% + 32px);
+  width: 100%;
   z-index: -2;
 
   background-color: var(--cream);
@@ -264,7 +263,6 @@ body {
   position: relative;
 }
 
-
 /* Header */
 .header {
   margin-bottom: 56px;
@@ -280,8 +278,14 @@ body {
 
 
 /* Intro */
+.intro__wrapper {
+  display: flex;
+  justify-content: center;  
+}
 .intro {
   margin-bottom: 56px;
+
+  position: relative;
 }
 .super-solution::before {
   width: 151.47px;
@@ -294,6 +298,7 @@ body {
 }
 .intro__text {
   margin-bottom: 32px;
+  max-width: 38ch;
 }
 .intro__cta {
   padding-inline: 32px;
@@ -315,6 +320,14 @@ body {
   background-image: url('assets/image-hero-landscape.webp');
   background-size: cover;
   background-repeat: no-repeat;
+}
+/* Center image until tablet width is reached and it's brought onto the same line as intro */
+@media only screen and (max-width: 768px) {
+  .main-content__image {
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  }
 }
 
 
@@ -338,6 +351,8 @@ body {
   align-items: center;
 
   text-align: center;
+
+  padding-inline: 16px;
 }
 /* Background takes up whole page width */
 .testimonial::before {
@@ -394,8 +409,10 @@ body {
 
 /* Footer */
 .footer-bg {
+  left: -16px;
   bottom: -80px;
-  
+
+  width: calc(100% + 32px);
   height: 420px;
 }
 .footer {
@@ -403,6 +420,126 @@ body {
 
   flex-direction: column;
   gap: 32px;
+}
+
+/* #endregion */
+
+
+/* Tablet styling */
+/* #region */
+
+@media only screen and (min-width: 760px) {
+  body {
+    margin-top: 40px;
+    margin-inline: 40px;
+  }
+
+
+  /* Header */
+  .header {
+    margin-bottom: 80px;
+  }
+  .header__cta {
+    padding-inline: 24px;
+    padding-block: 12px;
+
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.16px;
+  }
+
+
+  /* Main and image */
+  .intro-and-image {
+    margin-bottom: 88px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 56px;
+  }
+  .intro__header-wrapper {
+    margin-bottom: 40px;
+
+    height: 128px;
+
+    position: relative;
+  }
+  .intro__header {
+    margin-bottom: unset;
+    width: 573px;
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.78px;
+  }
+  .main-content__image {
+    margin-bottom: unset;
+
+    width: 281px;
+    height: 482px;
+
+    background-image: url('assets/image-hero-portrait.png');
+  }
+
+
+  /* Stats */
+  .stats {
+    /* Keeps balance with image as intro is being pulled away when screen enlarges */
+    margin-left: auto;
+    right: 0;
+
+    margin-bottom: 272px;
+
+    /* So stats don't spread too far out */
+    max-width: 720px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .testimonial {
+    margin-bottom: 72px;
+
+    padding-inline: 58px;
+  }
+  .testimonial::before {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-bg {
+    left: -40px;
+    position: absolute;
+    width: calc(100% + 80px);
+  
+    height: 640px;
+  }
+  .footer {
+    margin-bottom: 72px;
+  
+    flex-direction: row;
+    gap: unset;
+  }
+}
+
+/* #endregion */
+
+
+/* Desktop styling */
+/* #region */
+
+@media only screen and (min-width: 1150px) {
+  body {
+    background-color: blue;
+  }
 }
 
 /* #endregion */
