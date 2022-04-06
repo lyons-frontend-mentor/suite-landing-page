@@ -209,10 +209,10 @@
 - Body
   - Max content width of 1110; outside this
   - mt-50
-- Nav bar
+- Header
   - mb-66
 - Main, image, and stats
-  - mb-144
+  - mb-200
   - Everything center-aligned vertically
   - Main
     - Arc
@@ -250,6 +250,7 @@
       - mb-32
 - Testimonial
   - mb-96
+  - px-112 py-88
   - Image
     - mr-30
     - Becomes large, 375 x 600
