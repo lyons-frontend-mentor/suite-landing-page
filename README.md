@@ -8,8 +8,8 @@ Create a responsive landing page based on the given Figma designs.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- See the solution: [here](https://your-solution-url.com)
+- See the live site [here](https://lyons-frontend-mentor.github.io/suite-landing-page/).
 
 ### Built with
 

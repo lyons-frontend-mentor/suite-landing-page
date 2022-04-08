@@ -115,6 +115,11 @@ body {
 /* General styling */
 /* #region */
 
+body {
+  /* For decorative bottom element */
+  overflow-x: hidden;
+}
+
 /* Header */
 .header {
   display: flex;
