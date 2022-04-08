@@ -118,6 +118,7 @@ body {
 body {
   /* For decorative bottom element */
   overflow-x: hidden;
+  background-color: var(--white);
 }
 
 /* Header */
@@ -569,7 +570,6 @@ body {
     margin-bottom: 200px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 96px;
   }
