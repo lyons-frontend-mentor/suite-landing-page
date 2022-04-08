@@ -1,88 +1,40 @@
-# Frontend Mentor - Suite landing page
+# Typemaster pre-launch landing page solution
 
-![Design preview for the Suite landing page coding challenge](./preview.jpg)
+## Overview
 
-## Welcome! 👋
+### The challenge
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+Create a responsive landing page based on the given Figma designs.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
+### Links
 
-**To do this challenge, you need a good understanding of HTML and CSS.**
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## The challenge
+### Built with
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+- HTML
+- CSS
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+## Reflection
 
-Your users should be able to:
+In my previous challenge, I developed a strategy whereby I carefully inspect each of the designs and write up notes (in `design.md`) before beginning to code. I chose this challenge because it's very similar to the previous one (another landing page), so that I could practice accounting for design changes between layouts. As a result, I mainly focused on refining my existing skills rather than discovering new ones. For example, in my CSS I decided to have four main styling sections:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+1. General formatting, for styles applicable to all layouts (e.g. colors of text, buttons, etc.);
+2. Mobile;
+3. Tablet;
+4. Desktop.
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+This change mainly helped me organize my CSS, as in retrospect combining the mobile and general formatting would achieve the same effect due to how I set up my media queries (only using minimum screen widths, rather than using both min and max). 
 
-## Where to find everything
+I'm not yet sure whether I want to continue using only minimum screen widths in the media queries, or whether I want to implement ranges. On the one hand, using only minimum screen widths allows the code to stack on top of each other (e.g. when margins/padding don't change). On the other hand, I found myself needing to negate old rules when the layout changed, especially for margins. For example, I needed to `unset` a lot of my old margins on the Jeremy image in the testimonial. While it was manageable in this challenge, I imagine it could become unsustainable for larger projects.
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+### Continued development
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. We've exported different versions, formats, and resolutions for some of the assets. If you like, you can use these to practice optimizing your images for different devices.
+For future challenges I want to continue using this approach. However, I'd also like to consider whether I could use certain properties more cleverly. For example, a lot of people praise CSS Grid for eliminating the need for media queries. While I certainly need *some* media queries in this project (to use larger images as the screen size gets larger), perhaps a certain CSS Grid layout would allow the content prior to the testimonial to automatically adjust to the larger screen sizes. Peraps it could be something like this:
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project. Our fonts always come from [Google Fonts](https://fonts.google.com/).
+- The text component, the image, and each of the stats gets their own cells, for 5 cells total.
+- Some sort of `auto-fill`/`auto-flow` property would allow the text and image to occupy the same line when possible.
+- Perhaps choosing the track widths and heights appropriately would allow the stats to switch from taking up a column for the mobile/desktop layouts, to taking up a row for the tablet layout. 
 
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the design files to GitHub. With these premium challenges, please be sure not to share the design files in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the design files to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-**Have fun building!** 🚀
+On this last point, I'm not so sure, but this is certainly something to try in the future.
