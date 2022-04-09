@@ -8,7 +8,7 @@ Create a responsive landing page based on the given Figma designs.
 
 ### Links
 
-- See the solution: [here](https://your-solution-url.com)
+- See the solution: [here](https://www.frontendmentor.io/challenges/suite-landing-page-tj_eaU-Ra/hub/mobilefirst-solution-using-bemcss-ryGiFxAQ5)
 - See the live site [here](https://lyons-frontend-mentor.github.io/suite-landing-page/).
 
 ### Built with
